@@ -1,5 +1,7 @@
 package cn.jerrymc.skilrp.skills;
 
+import org.bukkit.World;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitScheduler;
 
@@ -26,7 +28,8 @@ public class Skill {
         this.level = level;
     }
 
-    public void use() {
+    // When skill used
+    public void use(Player player, World world) {
     }
 
     public void startCooldown() {
