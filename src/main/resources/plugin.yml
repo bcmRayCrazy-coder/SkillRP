@@ -1,6 +1,6 @@
 name: SkilRP
 version: '${project.version}'
-main: cn.jerrymc.skilrp.Main
+main: cn.jerrymc.skillrp.Main
 api-version: 1.17
 authors: [ bcmray_crazy ]
 description: Skill Role Play Game of Minecraft Spigot Plugin

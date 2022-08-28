@@ -1,4 +1,4 @@
-package cn.jerrymc.skilrp.skills;
+package cn.jerrymc.skillrp.skills;
 
 import org.bukkit.World;
 import org.bukkit.entity.Player;
@@ -14,15 +14,18 @@ public class Skill {
     private float cooldown;
     // Skill level
     private int level;
+    // Skill description
+    private String description;
 
     // cooldown task id
     private int cooldownTaskId;
 
     private JavaPlugin owner;
 
-    public Skill(JavaPlugin owner, String name, int modelData, float cooldownTicks, int level) {
+    public Skill(JavaPlugin owner, String name, String description, int modelData, float cooldownTicks, int level) {
         this.owner = owner;
         this.name = name;
+        this.description = description;
         this.modelData = modelData;
         this.cooldown = cooldownTicks;
         this.level = level;
@@ -70,6 +73,10 @@ public class Skill {
 
     public int getModelData() {
         return modelData;
+    }
+
+    public String getDescription() {
+        return description;
     }
 
     public void setCooldownTaskId(int cooldownTaskId) {

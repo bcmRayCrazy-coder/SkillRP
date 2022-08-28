@@ -1,4 +1,4 @@
-package cn.jerrymc.skilrp;
+package cn.jerrymc.skillrp;
 
 import org.bukkit.plugin.java.JavaPlugin;
 

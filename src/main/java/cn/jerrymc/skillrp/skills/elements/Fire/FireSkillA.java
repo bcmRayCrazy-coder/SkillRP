@@ -1,6 +1,6 @@
-package cn.jerrymc.skilrp.skills.storage;
+package cn.jerrymc.skillrp.skills.elements.Fire;
 
-import cn.jerrymc.skilrp.skills.Skill;
+import cn.jerrymc.skillrp.skills.Skill;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
@@ -8,10 +8,10 @@ import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class Fire extends Skill {
+public class FireSkillA extends Skill {
 
-    public Fire(JavaPlugin owner, String name, int modelData, float cooldownTicks, int level) {
-        super(owner, name, modelData, cooldownTicks, level);
+    public FireSkillA(JavaPlugin owner) {
+        super(owner, "fire_skill_a", "火技能1", 11401, 20, 1);
     }
 
     @Override
